@@ -56,20 +56,47 @@ body {
     cursor: pointer;
     transition: all .3s;
     border-radius: 5px;
-    background-color: #25a893;
-    color: #fff;
+    background-color: #fff;
+    color: #2d2d2d;
 }
 
 .section-title {
-  padding-top: 100px;
-  padding-bottom: 54px
+  padding-top: 80px;
+  padding-bottom: 50px
 }
 
-.sec-ttl-h3 {
+.message-ttl-h3 {
   font-size: 41px;
   background:linear-gradient(transparent 88%, #f5d233 0%) ;
   max-width: 720px;
   margin: 0 auto;
+}
+
+.service-ttl-h3 {
+  font-size: 41px;
+  background:linear-gradient(transparent 88%, #f5d233 0%) ;
+  max-width: 530px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contents-ttl-h3 {
+  font-size: 41px;
+  background:linear-gradient(transparent 88%, #f5d233 0%) ;
+  max-width: 485px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.lesson-ttl-h3 {
+  font-size: 41px;
+  background:linear-gradient(transparent 88%, #f5d233 0%) ;
+  max-width: 765px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /*以下 top-wrapper*/
@@ -78,34 +105,8 @@ body {
   margin: 0 auto;
   text-align: center;
   color: #2d2d2d;
-  background-color: #fff;
+  background-color: #fbda33;
   height: 735px;
-}
-
-.top-wrapper::before {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 40%;
-  height: 100%;
-  background-repeat: no-repeat;
-  content: "";
-  background: url(/Users/hiroki/Desktop/cocoda!LP/image/left_ornament.png) no-repeat;
-  background-size: contain;
-}
-
-.top-wrapper::after {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 100%;
-  background-repeat: no-repeat;
-  content: "";
-  background: url(/Users/hiroki/Desktop/cocoda!LP/image/right_ornament.png) no-repeat;
-  background-size: contain;
 }
 
 .top-desc {
@@ -141,7 +142,7 @@ body {
   margin: 0 auto;
   text-align: center;
   color: #2d2d2d;
-  background-color: #f1f2e5;
+  background: #f1f2e5;
 }
 
 .message-desc {
@@ -191,4 +192,125 @@ body {
     content: "";
     background: url(/Users/hiroki/Desktop/cocoda!LP/image/quate.png) no-repeat;
     background-size: contain;
+}
+
+/*以下service-wrapper*/
+.service-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 70px;
+}
+
+.sec-ttl-desc span {
+  font-weight: bold;
+  color: #3787b7;
+}
+
+.sec-ttl-desc {
+  font-size: 19px;
+}
+
+.service-cont-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.service-cont-left img {
+  width: 90%
+}
+
+.service-cont-right {
+    width: 650px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.service-num {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+  color: #fff;
+  -webkit-text-stroke: 1.3px #2d2d2d;
+  background:linear-gradient(transparent 80%, #f5d233 0%) ;
+  max-width: 50px;
+}
+
+.service-head {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.service-cont-right p {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 5px;
+  line-height: 1.7;
+}
+
+/*以下contents-wrapper*/
+.contents-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  color: #2d2d2d;
+  padding-bottom: 70px;
+  background-color: #f1f2e5;
+}
+
+.pd-icon {
+  display: inline-block;
+}
+
+/*以下form-wrapper*/
+.form-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  color: #2d2d2d;
+  background: #f5d233;
+}
+
+.form-cont {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 1.7;
+}
+
+/*以下lesson-wrapper*/
+.lesson-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 70px;
+}
+
+.lesson-cont-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 70px auto;
+}
+
+.lesson-cont {
+  width: 280px;
+  border: 1px solid #eee;
+}
+
+/*以下footer*/
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: #2d2d2d;
+}
+
+.corporate-logo {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 20px;
 }
