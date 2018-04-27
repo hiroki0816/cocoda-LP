@@ -67,42 +67,42 @@ body {
 
 .message-ttl-h3 {
   font-size: 37px;
-  background:linear-gradient(transparent 80%, #f5d233 0%) ;
-  max-width: 720px;
   margin: 0 auto;
 }
 
 .service-ttl-h3 {
   font-size: 37px;
-  background:linear-gradient(transparent 80%, #f5d233 0%) ;
-  max-width: 530px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.contents-ttl-h3 {
-  font-size: 37px;
-  background:linear-gradient(transparent 80%, #f5d233 0%) ;
-  max-width: 485px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 40px;
+.h3-ornament {
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 0 2px white;
 }
 
-.lesson-ttl-h3 {
-  font-size: 37px;
-  background:linear-gradient(transparent 80%, #f5d233 0%) ;
-  max-width: 765px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 40px;
+.h3-ornament::before {
+  content: "";
+position: absolute;
+background: rgba(245, 210, 51, 0.6);
+width: 80px;
+height: 80px;
+border-radius: 50%;
+top: 50%;
+left: 50%;
+-moz-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+z-index: -1;
 }
 
-.voice-ttl-h3 {
+
+
+.sec-ttl-h3 {
   font-size: 37px;
-  background:linear-gradient(transparent 80%, #f5d233 0%) ;
-  max-width: 620px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
@@ -157,7 +157,7 @@ body {
   margin-top: 25px;
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 3;
+  line-height: 2.5;
   padding-bottom: 75px;
 }
 
@@ -468,30 +468,9 @@ footer {
     padding-bottom: 75px;
   }
 
-  .service-ttl-h3 {
+  .sec-ttl-h3 {
     font-size: 33px;
-    width: 100%;
   }
-  .voice-ttl-h3 {
-    font-size: 30px;
-    width: 100%;
-  }
-
-  .contents-ttl-h3 {
-    font-size: 28px;
-    width: 100%;
-  }
-
-  .lesson-ttl-h3 {
-    font-size: 28px;
-    width: 100%;
-  }
-
-  .message-ttl-h3 {
-    font-size: 28px;
-    width: 100%;
-  }
-
 
   .top-desc {
     padding-top: 90px;
