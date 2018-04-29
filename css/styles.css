@@ -423,14 +423,33 @@ footer {
   height: 60px;
   width: 100%;
   background-color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.corporate-logo {
+.footer-logo {
   color: #fff;
-  text-align: center;
-  font-weight: bold;
   line-height: 60px;
   font-size: 20px;
+}
+
+.footer-list {
+  color: #fff;
+  line-height: 60px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.footer-list li {
+  float: left;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.footer-list li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 
@@ -528,5 +547,21 @@ footer {
     font-size: 19px;
     line-height: 2.3;
   }
+
+  footer {
+    height: 80px;
+  }
+
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .footer-list {
+    line-height: 40px;
+  }
+
+
 
 }
